@@ -10,12 +10,12 @@ import java.util.List;
 import java.util.Objects;
 
 public final class FerryParser {
+    private static final ObjectReader reader = new ObjectMapper()
+            .reader();
     private FerryParser(){
     }
     public static List<Car> parse(String jsonText) throws IOException {
         Objects.requireNonNull(jsonText);
-        ObjectReader reader = new ObjectMapper()
-                .reader();
         try(JsonParser parser = reader.createParser(jsonText)){
             return parser.readValueAs(new TypeReference<List<Car>>(){});
         }
