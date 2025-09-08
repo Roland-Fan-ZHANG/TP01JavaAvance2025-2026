@@ -8,4 +8,4 @@ Pour empêcher de faire un new FerryParser(), il faut rendre private le construc
 
 Pour empêcher l'héritage il faut rendre la classe final (ou scellé la classe mais c'est pas ce qu'on demande).
 
-JsonParser implante l'interface AutoCloseable, ça veut dire qu'il soit dans un bloc try-with-resources.
+JsonParser implante l'interface AutoCloseable, ça veut dire qu'il doit être dans un bloc try-with-resources.
