@@ -1,6 +1,7 @@
 import fr.uge.ferry.Car;
 import fr.uge.ferry.FerryFare;
 import fr.uge.ferry.FerryParser;
+import fr.uge.ferry.Truck;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
@@ -254,7 +255,7 @@ public class FerryTest {
     }
   }
 
-/*
+
   @Nested
   public class Q4 {
     @Test
@@ -391,7 +392,7 @@ public class FerryTest {
     }
   }
 
-
+/*
   @Nested
   public class Q5 {
     @Test

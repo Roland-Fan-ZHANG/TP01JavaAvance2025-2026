@@ -2,7 +2,7 @@ package fr.uge.ferry;
 
 import java.util.Objects;
 
-public record Car(String ownerName, int passengers, int children) {
+public record Car(String ownerName, int passengers, int children) implements Vehicle {
     public Car{
         Objects.requireNonNull(ownerName);
         if(children >= passengers){
