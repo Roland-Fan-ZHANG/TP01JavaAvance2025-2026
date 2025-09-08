@@ -9,3 +9,7 @@ Pour empêcher de faire un new FerryParser(), il faut rendre private le construc
 Pour empêcher l'héritage il faut rendre la classe final (ou scellé la classe mais c'est pas ce qu'on demande).
 
 JsonParser implante l'interface AutoCloseable, ça veut dire qu'il doit être dans un bloc try-with-resources.
+
+Q3 : L'interface des dictionnaires est une Map et on va utiliser une HashMap.
+
+On va utiliser la méthode merge pour cumuler le prix d'une voiture si un propriétaire en possède plusieurs.
