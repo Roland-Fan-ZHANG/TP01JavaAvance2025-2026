@@ -13,3 +13,16 @@ JsonParser implante l'interface AutoCloseable, ça veut dire qu'il doit être da
 Q3 : L'interface des dictionnaires est une Map et on va utiliser une HashMap.
 
 On va utiliser la méthode merge pour cumuler le prix d'une voiture si un propriétaire en possède plusieurs.
+
+Q4 : On va créer une interface Vehicle et on va utiliser le Pattern Matching pour calculer le prix d'une liste de voiture ou de camion.
+
+Q5 :
+
+````java
+public static List<Vehicle> parse(String jsonText) throws IOException {
+    Objects.requireNonNull(jsonText);
+    return reader.forType(new TypeReference<List<Vehicle>>(){}).readValue(jsonText);
+}
+````
+
+Q6 : On va changer notre HashMap en LinkedHashMap pour conserver l'ordre d'insertion.
