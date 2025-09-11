@@ -26,3 +26,9 @@ public static List<Vehicle> parse(String jsonText) throws IOException {
 ````
 
 **Q6** : On va changer notre HashMap en LinkedHashMap pour conserver l'ordre d'insertion.
+
+**Q7** : On va créer une Map qui va contenir le nom du propriétaire ainsi que le nombre de véhicule qu'il possède. Puis on va calculer les prix avec une remise de chaque propriétaire (on parcourt la Map).
+
+**Q8** : La lambda sera une BiFunction qui contiendra le prix initial, la liste de véhicule et retourne le prix final.
+
+**Q9** : On appelle la méthode computeFare pour retourner une Map qui contient les prix sans remise.
