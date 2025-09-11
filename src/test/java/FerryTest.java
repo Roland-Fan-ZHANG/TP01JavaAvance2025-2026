@@ -737,7 +737,7 @@ public class FerryTest {
     }
   }
 
-/*
+
   @Nested
   public class Q8 {
     @Test
@@ -914,5 +914,4 @@ public class FerryTest {
           () -> FerryFare.computeFareWithFleetDiscount(List.of(), null));
     }
   }
- */
 }
